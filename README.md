@@ -1,2 +1,2 @@
-#clothing Store
+# Clothing Store
 A clothing display store
