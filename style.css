@@ -1,0 +1,510 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#container{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0,0,0,0.30)),url(imgs/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    padding: 15px;
+  
+
+}
+.logo{
+    color:white;
+    font-size: 20px;
+    font-weight:bold; 
+
+
+}
+.icons{
+    display:flex;
+    cursor: pointer;
+    
+}
+
+.icon a{
+    margin-left:25px;
+    color:palevioletred;  
+    
+}
+.icon a:hover{
+    color:white;
+}
+
+
+
+ .navbar ul{
+    display: flex;
+
+}
+.navbar li{
+    list-style: none;
+    margin-left:20px;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    /* text-transform: uppercase */
+
+}
+.navbar a:hover{
+    color: pink;
+}
+ 
+.checkbtn{
+    font-size: 25px;
+    color:white; 
+    cursor:pointer;
+    display:none;
+
+ }
+ 
+
+
+.content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1{
+    color: white;
+    font-size: 45px;
+padding-top:220px;
+text-align: center;
+
+}
+.content h1 span {
+color:palevioletred;
+} 
+
+/* shop now btn --------------*/
+
+.btn-shop{
+    font-size: 18px;
+    padding:10px;
+    margin-top:30px;
+    border-radius: 5px;
+    background-color: palevioletred;
+    border:none;
+    cursor: pointer;
+   transition: all 0.5s;
+}
+.btn-shop:hover{
+    transform: scale(1.05)
+}
+
+.btn-shop a{
+    text-decoration: none;
+    color: black;
+   
+
+}
+
+/* new arrival styling=----------*/
+
+.new, .trend{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+  .new h1, .trend h1{
+    font-size: 30px;
+    padding: 60px;
+    /* margin:10px; */
+
+}
+.new-gallery, .trend-gallery{
+    /* display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    width:100%;
+    margin-top:30px; 
+    padding:10px 10%;
+
+
+} 
+.new-gallery .new-img, .trend-gallery .trend-img{
+    padding:25px 0px;
+    transition: all 0.5s;
+}
+.new-gallery .new-img:hover, .trend-gallery .trend-img:hover{
+    transform: scale(1.03);
+}
+.new-gallery .new-img img, .trend-gallery .trend-img img{
+    width:100%;
+    
+    /* height:300px; */
+}
+
+
+.new-img .img-text, .trend-img .img-text{
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+padding:5px;
+font-size: 18px;
+} 
+
+/* trending styling--------------------*/
+
+.trend{
+    background-color: #f2f2f2;
+
+}
+
+/* all product style------------*/
+
+.product-home{
+    float:right;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.product-title{
+    font-size: 20px;
+    margin: 15px;
+border:1px solid black;
+border-radius: 25px;
+    text-align: center;
+    padding:15px;
+
+}
+#allProducts select{
+    width:140px;
+    height:30px;
+    margin:10px;
+}
+
+.products-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.products-gallery img{
+    width:165px;
+    height:150px;
+} 
+.product-img{
+    background-color:#f2f2f2;
+    /* padding:5px; */
+    margin:5px;
+}
+.product-img-text{
+    text-align: center;
+    font-size: 12px;
+    color:black;
+}
+
+
+/* form style-------------------------- */
+#acctContainer{
+    margin: 10px;
+    
+}
+
+.acct-title{
+    text-align: center;
+    color: rgba(253, 89, 143, 0.986);
+    line-height: 5rem;
+    text-decoration: underline;
+}
+#acctContainer h4{
+    float:right;
+    padding:2px;
+
+}
+
+#acctContainer form{
+    padding-top:15px;
+    padding-left:5px;
+    display:flex;
+    flex-direction: column
+}
+#acctContainer input{
+    padding:5px;
+    
+
+}
+
+#acctContainer button{
+    padding:5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(253, 89, 143, 0.986);
+    color:white;
+    font-size: 14px;
+
+}
+#acctContainer .login{
+line-height: 3rem;
+}
+#acctContainer .login a:hover{
+    cursor: pointer;
+}
+
+.acct-txt h3{
+    padding:5px;
+}
+
+
+
+/* single product style---------------------*/
+
+#singleproductContainer{
+    padding:10px;
+    width:100%;
+    height:100vh;
+}
+
+
+.singleProductImg img{
+width:350px;
+height:320px;
+}
+.singleProductName{
+    line-height: 2.5rem;
+}
+
+.singleProductDescription p{
+font-size: 14px;
+width:300px;
+padding-top: 10px;
+}
+
+.singleProductColor {
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.singleProductColor input{
+width: 12px;
+height:9px
+}
+
+.singleProductColor label{
+font-size: 13px
+}
+
+.singleProductSize {
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.singleProductSize input{
+width: 12px;
+height:9px
+}
+
+.singleProductSize label{
+font-size: 13px
+}
+
+
+#singleproductContainer button{
+    width:350px;
+    margin-top: 25px;
+    background-color: black;
+    color:white;
+    border:none;
+    font-size: 12px;
+    padding:5px;
+    border-radius: 5px;
+}
+
+
+#singleproductContainer .home{
+    font-size: 12px;
+}
+
+
+
+footer{
+    padding:25px;
+    background-color: #111;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+footer li{
+    list-style: none;
+    padding-top: 3px;
+    font-size: 14px
+   
+}
+footer .foot h4{
+    
+    font-size: 16px;
+    color: rgb(255, 100, 126);
+}
+footer .foot{
+    padding-top:15px;
+    color:white;
+    font-size: 14px;
+    width:100%;
+
+
+}
+footer .foot p{
+    padding-top:10px;
+}
+footer .copy{
+   
+    color: gray;
+    font-size: 10px;
+    text-align: center;
+    padding-top:10px;
+   
+}
+footer.socials{
+        margin: 10px 0 0 0;
+    }
+
+    footer .socials a span{
+        height:30px;
+        width:30px;
+        background: #1a1a1a;
+        text-align:center;
+        font-size:16px;
+        border-radius:5px;
+        color:#fff;
+        padding:5px;
+        margin-top:10px;
+        transition: all 0.5s;
+    }
+
+    footer .socials a span:hover{
+        background: rgb(248, 43, 129);
+        color:#111;  
+        transform: translateY(-6%);
+    }
+.hidden{
+    display: none;
+}
+
+
+/* responsiveness----------------------*/
+
+
+@media(max-width: 900px){
+.checkbtn{
+    display:block;
+}
+#close-btn{
+   display: block; 
+   width:50px;
+   font-size: 20px;
+   background-color: black;
+   border:none;
+   cursor: pointer;
+   color:white;
+   padding:10px;
+
+}
+#close-btn:hover{
+color: palevioletred
+
+}
+nav ul{
+    position:fixed;
+    width:50%;
+    height:65vh;
+    background: white;
+    top:80px;
+    right:-100%;
+    text-align:center;
+    flex-direction: column;
+    transition: all .5s;
+    cursor: pointer;
+
+}
+.navbar ul li {
+    margin:7px 0px;
+    padding-top: 15px;
+}
+.navbar ul li a{
+    font-size:16px;
+    color:black;
+}
+.navbar ul li a:hover{
+    color:rgb(206, 38, 94); 
+    text-decoration: underline;
+
+}
+
+
+}
+
+/* @media(min-width: 920px) and (max-width: 1200px){
+    nav{
+       height:100px;
+    }
+    .logo{
+        font-size:23px;
+    }
+    .icon a{
+        margin-left:30px;
+    }
+.icon{
+    font-size:18px;
+}
+.navbar li{
+    margin:7px;
+}
+
+.content h1{
+    font-size: 48px;
+padding-top:230px;
+
+} */
+
+
+  
+@media screen and (min-width: 991px){
+    .footer-content{
+        display:flex;
+    }
+    .logo{
+        font-size:25px;
+    }
+    nav{
+        height:140px;
+     }
+
+     .icon{
+        font-size:23px;
+        margin-left:20px;
+    }
+    .btn-shop{
+        width:200px;
+    }
+   
+}
+
+
+
+
+
